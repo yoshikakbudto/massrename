@@ -7,11 +7,12 @@
 @SetLocal EnableExtensions EnableDelayedExpansion
 @Call :_InitEnv
 
-%_Set% SRCDIR		"C:\dnla\radio\Nostalgie - Best of 60s\"	chk
-%_Set% PattConf		MassRenameRules.Conf	chk
+%_Set% SRCDIR           "C:\dnla\radio\Nostalgie - Best of 60s\"        chk
+%_Set% PattConf         MassRenameRules.Conf    chk
 Set FILEMASK=*.mp3
 
 For %%j In (%SRCDIR%\%FILEMASK%) Do Call :Frename "%%j"
+
 
 
 Exit
@@ -35,7 +36,7 @@ Exit
 GoTo :Eof
 
 
- *_InitEnv							      _InitEnv
+ *_InitEnv                                                            _InitEnv
  * Initialize environment
  *
  */
@@ -50,7 +51,7 @@ Goto :eof
 
 
 
-/* _Set								          _Set
+/* _Set                                                                   _Set
  * Sets the variables with file remove or existance check features
  *
  * %1 - VarName
